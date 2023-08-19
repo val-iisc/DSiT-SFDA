@@ -1,6 +1,6 @@
 # DSiT
 
-This is the repository that contains source code for the [DSiT website](https://dsit.github.io).
+This is the repository that contains source code for the [DSiT website](https://val.cds.iisc.ac.in/DSiT-SFDA/).
 
 If you find our work useful in your research please cite:
 ```
