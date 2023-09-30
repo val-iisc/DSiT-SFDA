@@ -12,7 +12,7 @@ Conventional Domain Adaptation (DA) methods aim to learn domain-invariant featur
 
 <p align="center">
 <figure>
-  <img src="images/main_teaser.png" alt="figure1"/>
+  <img src="images/main_teaser.jpeg" alt="figure1"/>
   <figcaption> <b>A.</b> Overview of the proposed framework. <b>B.</b> Conventional DA methods preserve domain-invariance, resulting in only task-oriented clusters in the feature space. <b>C.</b> Our proposed disentanglement ensures that different domains are well-clustered.
 </figcaption>
 </figure>
