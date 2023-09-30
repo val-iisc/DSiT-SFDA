@@ -155,3 +155,76 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+ul.navUL li {
+  width: fit-content;
+  display: inline-block;
+}
+
+/* bubble style */
+.hoverBubble {
+  background: #393939;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 5px;
+  position: absolute;
+  text-align: left;
+  visibility: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.bubblePosition {
+  bottom: 115%;
+  height: inherit;
+  left: 0;
+  min-height: 10px;
+  top: auto;
+  width: fit-content;
+}
+
+.hoverBubble:after,
+.bubblePosition:after {
+  border: 8px solid transparent;
+  border-top-color: #393939;
+  bottom: -15px;
+  content: '';
+  height: 0px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 0px;
+}
+
+/* bubble hover */
+ul.navUL li a:hover .hoverBubble {
+  opacity: 0.9;
+  visibility: visible;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+/* content in the bubble */
+.hoverBubble i {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.hoverBubble p {
+  font-size: 1em;
+  min-height: 5px;
+  text-align: center;
+}
