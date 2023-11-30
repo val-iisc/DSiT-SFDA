@@ -4,12 +4,13 @@ This is the repository that contains source code for the [DSiT website](https://
 
 If you find our work useful in your research please cite:
 ```
-@article{sanyal2023dsit,
-  author    = {Sanyal, Sunandini and Ramayee Asokan, Ashish and Bhambri, Suvaansh and Kulkarni, Akshay and Kundu, Jogendra Nath and Radhakrishnan, Venkatesh Babu},
-  title     = {Domain-Specificity Inducing Transformers for Source-Free Domain Adaptation},
-  journal   = {ICCV},
-  year      = {2023},
-}
+@inproceedings{sanyal2023domain,
+      title={Domain-Specificity Inducing Transformers for Source-Free Domain Adaptation},
+      author={Sanyal, Sunandini and Asokan, Ashish Ramayee and Bhambri, Suvaansh and Kulkarni, Akshay and Kundu, Jogendra Nath and Babu, R Venkatesh},
+      booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+      pages={18928--18937},
+      year={2023}
+    }
 ```
 
 # Website License
