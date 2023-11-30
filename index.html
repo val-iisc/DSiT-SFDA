@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Domain-Specificity-inducing Transformers for Source-Free Domain Adaptation">
+  <meta name="description" content="Domain-Specificity-inducing Transformers for Source-Free Domain Adaptation">
   <meta name="keywords" content="Domain Adaptation, Source-Free, ViT">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DSiT-SFDA</title>
@@ -22,15 +22,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -40,189 +38,148 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
-
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Domain-Specificity-inducing Transformers for Source-Free Domain Adaptation</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=E59fLgMAAAAJ&hl=en">Sunandini Sanyal</a><sup>*</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=MXB6jaMAAAAJ&hl=en">Ashish Ramayee Asokan</a><sup>*</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=UQjAvO8AAAAJ&hl=en">Suvaansh Bhambri</a><sup>*</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://akshayk07.weebly.com/">Akshay Kulkarni</a>,
-            </span>
-            <br/>
-            <span class="author-block">
-              <a href="https://sites.google.com/view/jogendra/">Jogendra Nath Kundu</a>,
-            </span>
-            <span class="author-block">
-              <a href="http://cds.iisc.ac.in/faculty/venky/">R Venkatesh Babu</a>,
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Vision and AI Lab, Indian Institute of Science, Bangalore</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <ul class="navUL">
-                <li>
-
-                <!-- PDF Link. -->
-                <span class="link-block">
-                  <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Sanyal_Domain-Specificity_Inducing_Transformers_for_Source-Free_Domain_Adaptation_ICCV_2023_paper.html"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-              
-                <!-- arXiv link -->
-                <span class="link-block">
-                  <a href="http://arxiv.org/abs/2308.14023"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a>
-                </span>
-
-                <!-- Video Link. -->
-                <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"> <i class="fab fa-youtube"></i> </span>
-                    <span>Video</span>
-                    <div class="bubblePosition hoverBubble">
-                      <p>Coming Soon!</p>
-                    </div>
-                  </a>
-                </span>
-
-                <!-- Code Link. -->
-                <span class="link-block">
-                  <a href="https://github.com/val-iisc/DSiT-SFDA"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                    </a>
-                </span>
-              </li>
-              </ul>
+            <h1 class="title is-1 publication-title">Domain-Specificity-inducing Transformers for Source-Free Domain
+              Adaptation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=E59fLgMAAAAJ&hl=en">Sunandini
+                  Sanyal</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://ashishasokan.github.io/">Ashish Ramayee
+                  Asokan</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=UQjAvO8AAAAJ&hl=en">Suvaansh Bhambri</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://akshayk07.weebly.com/">Akshay Kulkarni</a>,
+              </span>
+              <br />
+              <span class="author-block">
+                <a href="https://sites.google.com/view/jogendra/">Jogendra Nath Kundu</a>,
+              </span>
+              <span class="author-block">
+                <a href="http://cds.iisc.ac.in/faculty/venky/">R Venkatesh Babu</a>,
+              </span>
             </div>
 
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Vision and AI Lab, Indian Institute of Science, Bangalore</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <ul class="navUL">
+                  <li>
+
+                    <!-- PDF Link. -->
+                    <span class="link-block">
+                      <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Sanyal_Domain-Specificity_Inducing_Transformers_for_Source-Free_Domain_Adaptation_ICCV_2023_paper.html"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- arXiv link -->
+                    <span class="link-block">
+                      <a href="http://arxiv.org/abs/2308.14023"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                      </a>
+                    </span>
+
+                    <!-- Video Link. -->
+                    <span class="link-block">
+                      <a href="./static/images/DSiT_Poster.pdf"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon"> <i class="fa fa-image"></i> </span>
+                        <span>Poster</span>
+                      </a>
+                    </span>
+
+                    <!-- Code Link. -->
+                    <span class="link-block">
+                      <a href="https://github.com/val-iisc/DSiT-SFDA"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                      </a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
+  <section class="section">
 
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-three-fifths">
-      <h2 class="title is-3">Overview</h2>
-      <div class="content has-text-justified">
-        We analyze Source-Free Domain Adaptation (SFDA) from the perspective of domain specificity, and 
-        show that disentangling and learning the domain-specific and task-specific factors in a Vision Transformer 
-        (ViT) architecture leads to improved target adaptation.
-      </div>
-      </p>
-      <!-- <div class="publication-video">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          We analyze Source-Free Domain Adaptation (SFDA) from the perspective of domain specificity, and
+          show that disentangling and learning the domain-specific and task-specific factors in a Vision Transformer
+          (ViT) architecture leads to improved target adaptation.
+        </div>
+        </p>
+        <!-- <div class="publication-video">
         <img src="./static/images/main_teaser.png"
                  class="interpolation-image"
                  alt="Main Teaser image."/>
       </div> -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <figure>
-            <img src="./static/images/main_teaser.png"
-               class="interpolation-image"
-               alt="Interpolate start reference image."/>
-            <figcaption>Fig.1 - <b>A.</b> Overview of the proposed framework. <b>B.</b> Conventional DA methods 
-              preserve domain-invariance, resulting in only task-oriented clusters in the feature space. <b>C.</b> 
-              Our proposed disentanglement ensures that different domains are well-clustered.</figcaption>
-          </figure>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <figure>
+              <img src="./static/images/main_teaser.png" class="interpolation-image"
+                alt="Interpolate start reference image." />
+              <figcaption>Fig.1 - <b>A.</b> Overview of the proposed framework. <b>B.</b> Conventional DA methods
+                preserve domain-invariance, resulting in only task-oriented clusters in the feature space. <b>C.</b>
+                Our proposed disentanglement ensures that different domains are well-clustered.</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="container is-max-desktop"> -->
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-three-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          Conventional Domain Adaptation (DA) methods aim to learn domain-invariant feature 
-          representations to improve the target adaptation performance. However, we motivate 
-          that domain-specificity is equally important since in-domain trained models hold 
-          crucial domain-specific properties that are beneficial for adaptation. Hence, we propose 
-          to build a framework that supports disentanglement and learning of domain-specific 
-          factors and task-specific factors in a unified model. Motivated by the success of 
-          vision transformers in several multi-modal vision problems, we find that queries could 
-          be leveraged to extract the domain-specific factors. Hence, we propose a novel 
-          Domain-Specificity inducing Transformer (DSiT) framework for disentangling and learning 
-          both domain-specific and task-specific factors. To achieve disentanglement, we propose to 
-          construct novel Domain-Representative Inputs (DRI) with domain-specific information to train 
-          a domain classifier with a novel domain token. We are the first to utilize vision transformers 
-          for domain adaptation in a privacy-oriented source-free setting, and our approach achieves 
+          Conventional Domain Adaptation (DA) methods aim to learn domain-invariant feature
+          representations to improve the target adaptation performance. However, we motivate
+          that domain-specificity is equally important since in-domain trained models hold
+          crucial domain-specific properties that are beneficial for adaptation. Hence, we propose
+          to build a framework that supports disentanglement and learning of domain-specific
+          factors and task-specific factors in a unified model. Motivated by the success of
+          vision transformers in several multi-modal vision problems, we find that queries could
+          be leveraged to extract the domain-specific factors. Hence, we propose a novel
+          Domain-Specificity inducing Transformer (DSiT) framework for disentangling and learning
+          both domain-specific and task-specific factors. To achieve disentanglement, we propose to
+          construct novel Domain-Representative Inputs (DRI) with domain-specific information to train
+          a domain classifier with a novel domain token. We are the first to utilize vision transformers
+          for domain adaptation in a privacy-oriented source-free setting, and our approach achieves
           state-of-the-art performance on single-source, multi-source, and multi-target benchmarks.
         </div>
       </div>
@@ -232,15 +189,15 @@
       <div class="column is-three-fifths">
         <h2 class="title is-3">Proposed Approach</h2>
         <figure>
-          <img src="./static/images/proposed_approach.png"
-            class="interpolation-image"
-            alt="Interpolate start reference image."/>
+          <img src="./static/images/proposed_approach.png" class="interpolation-image"
+            alt="Interpolate start reference image." />
           <figcaption>Fig.2 <b>DSiT Training</b> - <b>A.</b> Creating Domain Representative Inputs (DRI) <b>B.</b>
-            Domain-Specificity Disentanglement for the domain classification task <b>C.</b> Goal Task training.</figcaption>
+            Domain-Specificity Disentanglement for the domain classification task <b>C.</b> Goal Task training.
+          </figcaption>
         </figure>
       </div>
     </div>
-    
+
 
     <!-- Results -->
     <div class="columns is-centered has-text-centered">
@@ -253,10 +210,9 @@
         <h4 class="title is-5">1. Single-source DA on Office-Home </h4>
         <div class="columns is-centered has-text-centered">
           <figure>
-            <img src="./static/images/oh_ssda.png"
-            class="interpolation-image"
-            alt="oh_results"/>
-            <figcaption> <b>Table 1.</b> Results on the Office-Home dataset. ResNet-based results (top) and ViT-based results (bottom).</figcaption>
+            <img src="./static/images/oh_ssda.png" class="interpolation-image" alt="oh_results" />
+            <figcaption> <b>Table 1.</b> Results on the Office-Home dataset. ResNet-based results (top) and ViT-based
+              results (bottom).</figcaption>
           </figure>
         </div>
       </div>
@@ -266,55 +222,56 @@
         <h4 class="title is-5">2. Single-source DA on Office-31 and VisDA </h4>
         <div class="columns is-centered has-text-centered">
           <figure>
-            <img src="./static/images/o31_visda.png"
-            class="interpolation-image"
-            alt="oh_results"/>
-            <figcaption> <b>Table 2.</b> Results on the Office-31 and VisDA datasets. ResNet-based results (top) and ViT-based results (bottom).</figcaption>
+            <img src="./static/images/o31_visda.png" class="interpolation-image" alt="oh_results" />
+            <figcaption> <b>Table 2.</b> Results on the Office-31 and VisDA datasets. ResNet-based results (top) and
+              ViT-based results (bottom).</figcaption>
           </figure>
         </div>
       </div>
     </div>
 
 
-<!-- <section class="section" id="BibTeX"> -->
-  <div class="container is-max-desktop content">
-    <h2 class="title">Citing our work</h2>
-    <pre><code>@article{sanyal2023dsit,
-  author    = {Sanyal, Sunandini and Ramayee Asokan, Ashish and Bhambri, Suvaansh and Kulkarni, Akshay and Kundu, Jogendra Nath and Radhakrishnan, Venkatesh Babu},
-  title     = {Domain-Specificity-inducing Transformers for Source-Free Domain Adaptation},
-  journal   = {ICCV},
-  year      = {2023},
-}</code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/val-iisc" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
+    <!-- <section class="section" id="BibTeX"> -->
+    <div class="container is-max-desktop content">
+      <h2 class="title">Citing our work</h2>
+      <pre><code>@inproceedings{sanyal2023domain,
+      title={Domain-Specificity Inducing Transformers for Source-Free Domain Adaptation},
+      author={Sanyal, Sunandini and Asokan, Ashish Ramayee and Bhambri, Suvaansh and Kulkarni, Akshay and Kundu, Jogendra Nath and Babu, R Venkatesh},
+      booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+      pages={18928--18937},
+      year={2023}
+    }</code></pre>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This website is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
-          </p>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/val-iisc" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This website is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project
+              page.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </body>
+
 </html>
